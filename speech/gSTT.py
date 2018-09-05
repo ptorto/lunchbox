@@ -7,10 +7,10 @@ import os
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="/bin/Smart-Lunchbox-test-c81910c2b633.json"
 
 
-def googleSTT(path_archivo):
+def googleSTT(file):
     client = speech.SpeechClient()
 # Loads the audio into memory
-    with io.open(path_archivo, 'rb') as audio_file:
+    with io.open('speech/temp/'+file, 'rb') as audio_file:
         content = audio_file.read() 
         audio = types.RecognitionAudio(content=content)
     config = types.RecognitionConfig(
