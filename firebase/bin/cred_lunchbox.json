@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "smartlunchbox-3c32a",
+  "private_key_id": "b6fe0ee6f4250e44accf38eb5eeb1e7af20d585b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEugIBADANBgkqhkiG9w0BAQEFAASCBKQwggSgAgEAAoIBAQC39YCd6Hd69A3Q\nTiTg96AZS5/4fB8A9/MYpX2VwqK/aRKwn3/y/POK6+SaCGiS4XgsRILYOl1TuU2B\nB0wtQCIBin/MFOh9ZiaDWibTPRZX0h1wrs5V5JAcmkXQR11zPICVMeq1LuJzpjug\nO74IWelpKFu87xQo1zs2knZovDsT/jfNzZBtMW7A2PJa7upkv/IiySxMhU3E2gUJ\nuvWWkIFq5XaRAIqIwE17yftAbOG42/hpsjYd/RiVWD9GTA9L/dkNno2GFlFeY2V4\nT943oXV4K4DfbU0KqbgNNrxp9/374FdFwphTvK6rWTzDoL+hIepzsyIpM/s3nzEd\nFzX3JnlzAgMBAAECgf8ONj6dEObU0c0i9VhV0CEADCz6WtVfr49RO7Cw/a3N/2yO\nqm6Nc6gHvjGyJoJfgUSrCmcRaeKveL3Zcu/FAPaDJ/cpW1e3O/QvhwBcben2pgwR\n/eEPbGAnnKcdcC0dZKum2xfxkh96z86vBCdxYUf8ZgVbBR1tJsHeIB0+pNpdW5aH\nKU2w2a37RscLTrJeEoPFlbI0Xbs8W8AZJcX4KVR1xi8YHhxu8p57QG/AOEgBncx7\nCVE+QpUGbeZ0+7krxWfM0vBDK1zu0eRDYWf4ClCzreJ+dj8tEjfF33mrOqskytCi\nP/U8s/Cs/Y5QtPY3dMLmoc8zGkTA5EeNC0QaSoECgYEA89F3wpwwtsqBXaFq1UXP\nK67xRd8OHMAliVNncKIglnrgHsv3nuphUp0DkFwgyHkdZjkbJGKpPa2PEhr/ANhL\niYam8xYfMEyI+wXhkepo8BcXOrO0TluoeAv6qUQc8br1BoI2bo4chLqUmgofcHMT\nAIsjjkRnMLCU6fVua0sIbJMCgYEAwSZpPni4VAa7DyLX+bBPyHhO94lsg9WFM6Tz\nYlzVCElHyxdsYCv98QAWlJEDxchCiE4MvZLGS7VNBO73TpzB3ES3ZBsnH77yQoo7\n7Swd1PD4i9aySGdLQJWh2cwyucOVjthIGWbHk8f1aY3VdCAFIbEhtbZ6gZqJ2d/g\nX8jcq6ECgYA254aWdmGp5/Q1x3GtUSkT5zNBzrb41nQddoCmpnu8JzNs+/Vo/dKo\nrd7tlTF0s4FhUZ7BFM6Tqw+6vgWKhSqNb5sMxoCDedim3m4rU6QJ3MlIWMtTkeRg\nFCKAF2yFKtqeepgTUUEuym1IOttVkTRIPQzmrpSmLD18ad5RnvXorQKBgHVZKe37\nmDns0O90QvV/aimo9oksJBLAwinLWNd1ATUEmKrKM10GvUUTwaRHqpwafFml2dW/\ne9x5bS7HJNfNI3b5BNa8LHv8HeHRbHE/MWyzbr4/FZgpsa2ue2QAzPzR2Gat/rf4\nGt8tSGv18S6ZWaTLomhtUma1hnUpsH9hYLihAoGAc7BE2PXkE/owoRHMZAzH6E64\n7sZL2TITTwrW/id8qi8C/Co5Kj5/j71kUQSgE2nHCe4nYGum1AztJKCNYWlU07y6\naSJ5CJNDkCWo/4oTMETkwf9Nym4M0fWMqHScMWMEceeH6HKjJ2mWdqjZZyen+oPo\n3kgfIKXsn11Cuqyu92g=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-t4k4w@smartlunchbox-3c32a.iam.gserviceaccount.com",
+  "client_id": "101116379384328216879",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-t4k4w%40smartlunchbox-3c32a.iam.gserviceaccount.com"
+}

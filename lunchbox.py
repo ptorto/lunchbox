@@ -11,6 +11,7 @@ from models.LUNCHBOX import LunchBox
 from models.KID import Kid
 
 from speech.gTTS import googleTTS ##TextToSpeech de google cloud ##
+from speech.gSTT import googleSTT ##SpeechToText de google cloud ##
 
 global kid
 global lunchBox
@@ -32,18 +33,33 @@ def main():
 
 def inicialSetup():
     ##hacer conexion por BT y luego por wifi
-    googleTTS('hola, soy la nueva lochera')
-    googleTTS('Vamos a comenzar con la configuracion')
-    googleTTS('Por favor, dime tu nombre')    
-    os.system('arecord -r 16000 -f S16_LE audio_files/STT_audio_test.wav -d 3')
+    lunchBox = LunchBox()
     
-    nombre = raw_input('nombre: "')
-    kid = Kid(nombre)
-    
+    googleTTS('hola, soy la nueva lochera.')
+    googleTTS('Vamos a comenzar con la configuracion.')
+    googleTTS('Por favor, dime tu nombre.')
+    os.system('arecord -r 16000 -f S16_LE speech/temp/setup.wav -d 3')    
+ 
+    kid = Kid(googleSTT('setup.wav'))
+
+    googleTTS('Mucho gusto, '+kid.getName()+', ahora dime, ¿cuantos anios tienes?')
+    os.system('arecord -r 16000 -f S16_LE speech/temp/setup.wav -d 3')
+
+    kid.setAge(googleSTT('setup.wav'))
+
+    googleTTS('Ya se que tienes '+kid.getAge()+'aniotes')
+    googleTTS('Ahora dime, '+kid.getName()+', ¿cual es tu color favorito?')
+    os.system('arecord -r 16000 -f S16_LE speech/temp/setup.wav -d 3')
+
+    kid.setFavColor(googleSTT('setup.wav'))
     ##crear nino, lunchbox y cargar datos a app y subir a FireBase
     ##
 
-##CARGAR ARCHIVOS###
+
+################################################################
+###CARGAR INFORMACION DE LUNCHBOX DESDE ARCHIVOS (SI EXISTEN)###
+################################################################
+    
 def loadData():
     try:
         with open('bin/kid.pkl', 'rb') as input:
@@ -55,6 +71,6 @@ def loadData():
                 print('no tengo archivo lunchBox')
     except:
         inicialSetup()
-##FIN CARGAR ARCHIVOS##
-            
+
+
 main()
