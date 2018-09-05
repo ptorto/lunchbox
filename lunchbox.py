@@ -38,9 +38,18 @@ def inicialSetup():
     googleTTS('hola, soy la nueva lochera.')
     googleTTS('Vamos a comenzar con la configuracion.')
     googleTTS('Por favor, dime tu nombre.')
-    os.system('arecord -r 16000 -f S16_LE speech/temp/setup.wav -d 3')    
- 
-    kid = Kid(googleSTT('setup.wav'))
+    
+    intentos = 0
+    while intentos<3
+        try:
+            os.system('arecord -r 16000 -f S16_LE speech/temp/setup.wav -d 3')
+            kid = Kid(googleSTT('setup.wav'))
+            break
+        except:
+            googleTTS('No entendi, por favor, repite tu nombre')
+            intentos+=1
+            if intentos == 2:
+                
 
     googleTTS('Mucho gusto, '+kid.getName()+', ahora dime, ¿cuantos anios tienes?')
     os.system('arecord -r 16000 -f S16_LE speech/temp/setup.wav -d 3')
@@ -52,6 +61,7 @@ def inicialSetup():
     os.system('arecord -r 16000 -f S16_LE speech/temp/setup.wav -d 3')
 
     kid.setFavColor(googleSTT('setup.wav'))
+    
     ##crear nino, lunchbox y cargar datos a app y subir a FireBase
     ##
 
